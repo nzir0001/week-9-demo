@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Media Queries Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+      /* MOBILE FIRST STYLES - ALWAYS WORK */
+
+      .largekitten {display: none;}
+  }
+
+    ul {
+        list-style: square;
+    }
+
+    .gameslist {
+        list-style: none;
+    }
+
+    .gameslist li {
+        border-bottom: 1px solid red;
+        padding: 10px;
+    }
+
+      /* DESKTOP STYLES - ONLY WORK ABOVE 800px */
+      @media screen and (min-width: 480px){
+
+        
+
+           .largekitten {display: block;}
+           .smallkitten {
+               display: none;
+           } 
+  }
+           @media screen and (min-width: 800px){
+               .gameslist {
+                   float: left;
+               }
+
+               .gameslist li {
+                   border: 0;
+                   border-right: 3px solid green;
+               }
+
+           }
+
+           @media screen and (min-width: 900px) and (max-width: 1200px){
+               h1 {font-size: 4rem; color: royalblue;}
+
+           }
+
+           @media screen and (min-width: 1200px) {
+               h1 {font-size: 6rem; color: red;}
+
+           }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="container">
+  <h1>Meet Haiku</h1>
+  <h2 class="display-sm">-I AM MOBIL NAV</h2>
+  <h2 class="display-lg">-I AM DESKTOP NAV</h2> 
+  <img class="smallkitten" src="https://placekitten.com/200/200" alt="kitten image">
+  <img class="largekitten" src="https://placekitten.com/800/600" alt="kitten image">
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic cumque veritatis odio eius quibusdam nemo. Mollitia iste explicabo reprehenderit est dolorum molestiae debitis reiciendis tempore, qui laudantium recusandae minima aut.
+  </p>
+  <h3>Fun Games</h3>
+  <ul class="gameslist">
+    <li>Scratch the furniture</li>
+    <li>Jump on keyboard</li>
+    <li>Stare the human</li>
+  </ul>
+</main>
+<div class="instructions"> 
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum iaculis tellus quis dignissim. Maecenas eu tempus quam, id efficitur metus. Mauris tempor commodo tellus et vulputate. Morbi mollis maximus lectus, eu lobortis dolor pulvinar sed. Donec finibus ex a magna tincidunt, vitae dictum magna tincidunt. Curabitur bibendum, odio non vulputate laoreet, turpis tellus fringilla tortor, a porta lacus lorem sed mauris. Nullam mattis augue elit, iaculis egestas turpis ornare sed. Nulla ac rhoncus diam.</p>
+
+  <p>Suspendisse nunc elit, suscipit eget augue a, semper iaculis tortor. Proin posuere, orci non rhoncus interdum, lorem ligula vestibulum neque, ut tristique urna quam at leo. Donec maximus eleifend magna sed laoreet. Mauris et ligula pellentesque elit consectetur facilisis quis id mauris. Aenean iaculis ullamcorper lectus laoreet dignissim. Sed a congue arcu. Morbi sit amet mattis dolor. Aenean tristique semper velit, at gravida ipsum condimentum vitae. Etiam nisl nisi, imperdiet sit amet consectetur ut, sagittis eleifend dui. Nunc tristique mollis justo, nec semper dolor tincidunt eu. Integer a magna dui. Etiam ante quam, sodales eu sapien id, porta vestibulum nulla. Morbi efficitur blandit neque ac commodo. Donec auctor arcu et elit lobortis euismod. Proin vel consequat justo, in suscipit massa.</p>
+
+</div>
+  
+</body>
+</html>
